@@ -83,16 +83,16 @@ Note: Remember when using this design flow during an interview to be flexible. A
     - Precision, Recall, F1, ROC AUC, P/R AUC, mAP, log-loss, etc
       - Imbalanced data
   - Retrieval and ranking metrics
-    - Precision@k, Recall@k (do not consider ranking quality)
-    - mAP, MRR, nDCG
+    - Rank-less: Precision@k, Recall@k (do not consider ranking quality)
+    - Rank-aware: mAP (mean average precision), MRR (mean reciprocal rank), nDCG (normalized discounted cumulative gain)
   - Regression metrics: MSE, MAE, 
   - Problem specific metrics
-    - Language: BLEU, BLEURT, GLUE, ROUGE, etc 
-    - ads: CPE, etc  
+    - Language: BLEU (BLEU is commonly used to evaluate the quality of machine-generated translations by comparing them to human reference translations), BLEURT ( BLEURT is a learned evaluation metric based on BERT. It assesses how well a candidate sentence (e.g., generated text) conveys the meaning of a reference sentence.), GLUE (GLUE is a benchmark for evaluating the performance of natural language understanding models across various tasks.), ROUGE, etc 
+    - ads: CPE (cost per engagement (clicks, likes, comments, and shares)), etc  
   - Latency
   - Computational cost (in particular for on-device)
 - Online metrics
-  - CTR
+  - CTR (Click through rate)
   - Task/session success/failure rate,
   - Task/session total (e.g. watch) times, 
   - Engagement rate (like rate, comment rate)
